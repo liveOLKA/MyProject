@@ -10,12 +10,13 @@ import static common.Config.PLATFORM_AND_BROWSER;
 import static constants.Constant.TimeoutVariable.IMPLICIT_WAIT;
 
 public class CommonActions {
+
     public static WebDriver createDriver() {
         WebDriver driver = null;
 
         switch (PLATFORM_AND_BROWSER) {
             case "win_chrome":
-                System.setProperty("webdriver.chrome.driver", "D:\\Olka\\myPageObject\\myPageProject\\src\\main\\resources\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "D:\\Olka\\myNewProject\\newPageObject\\src\\main\\resources\\chromedriver.exe");
                 driver = new ChromeDriver();
                 break;
             default:
